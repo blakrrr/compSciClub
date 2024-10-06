@@ -1,9 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <body>
-
-  <h1>My First Heading</h1>
-  <p>My first paragraph.</p>
-
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            background-image: repeating-linear-gradient(
+                45deg,
+                #1a1a1a,
+                #1a1a1a 10px,
+                #222222 10px,
+                #222222 20px
+            );
+            color: #4aba69;
+            font-family: 'Roboto', 'Segoe UI', 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 70px 20px 20px; /* Added top padding to account for fixed nav */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(26, 26, 26, 0.9);
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #4aba69;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #6dda8d;
+        }
+        header {
+            background-color: rgba(26, 26, 26, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        main {
+            background-color: rgba(26, 26, 26, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2 {
+            color: #4aba69;
+            margin-top: 0;
+        }
+        a {
+            color: #2d7a44;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Computer Science Club</h1>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Welcome to our club!</h2>
+                <p>This is the official website for our Computer Science Club. Here, you'll find information about our meetings, projects, and events.</p>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Our club is dedicated to exploring the world of computer science and technology.</p>
+            </section>
+            <section id="events">
+                <h2>Upcoming Events</h2>
+                <p>Stay tuned for our exciting events and workshops!</p>
+            </section>
+            <section id="projects">
+                <h2>Our Projects</h2>
+                <p>Check out the amazing projects our members are working on.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries or to join the club.</p>
+            </section>
+        </main>
+    </div>
+</body>
 </html>
