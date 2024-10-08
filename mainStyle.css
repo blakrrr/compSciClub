@@ -55,7 +55,7 @@ nav ul li a:hover {
     color: #6dda8d;
 }
 
-header, .content-box {
+header, .content-box, main {
     background-color: rgba(26, 26, 26, 0.8);
     padding: 20px;
     margin-bottom: 20px;
